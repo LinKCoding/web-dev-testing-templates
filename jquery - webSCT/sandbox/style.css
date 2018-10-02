@@ -1,0 +1,25 @@
+/* Sample css file */
+
+body {
+  background-color: rgb(239, 217, 202);
+}
+
+#box {
+  border: 10px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 25% auto;
+}
+
+#left {
+  border: 5px solid red;
+  width: 90px;
+  height: 190px;
+}
+
+#right {
+  border: 5px solid blue;
+  width: 90px;
+  height: 190px;
+  float: right;
+}
