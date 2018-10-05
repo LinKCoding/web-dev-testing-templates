@@ -39,10 +39,9 @@ Limitations:
   ```
   The `if` statement will never be checked since a `return` statement came first and the `{pass: true}` object will pass the checkpoint.
   + Think of these tests as JavaScript files that execute callbacks and have access to Codecademy objects and their methods:
-    + Components.CodeEditor.codeContains
-    + Components.OutputTerminal.hasOutput
-    + Components.OutputTerminal.hasError
-
+    + `Components.CodeEditor.codeContains()`
+    + `Components.OutputTerminal.hasOutput()`
+    + `Components.OutputTerminal.hasError()`
 
 
 ### Specific to CodeEditor
@@ -50,4 +49,4 @@ Limitations:
 
 ### Specific to OutputTerminal
 + If you are expecting an error (not best practice), but if you must, you can use:
-  + Components.OutputTerminal.hasError(<regex for error>)
+  + `Components.OutputTerminal.hasError(<regex for error>)`
