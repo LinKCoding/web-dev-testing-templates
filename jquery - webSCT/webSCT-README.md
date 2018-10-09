@@ -2,6 +2,18 @@
 Use Case:
 + These tests are for when you are checking code in an HTML file.
 
+Benefits:
++ Can test DOM directly
++ Can use either jQuery expects or vanilla JS for webSCT tests
++ Allows learners to have flexibility in how they write their code since we're testing outcome/output
+
+Limitations:
++ Can't read code directly, can be problematic if you want a particular method
+  + Only tests frontend.
++ Can't check that eventListener has been triggered, browser will refresh after the "Run" button is clicked
++ Can't combine tests (e.g. mocha or componentTest)
+
+
 ### To run locally:
 + The sandbox folder will contain the code necessary to run your tests locally (if you need to restore to default, duplicate the **default** folder).
 + Change the **index.html** page (and any other files) as needed, but make sure you include a `<script>` element below the `<body>` to test your HTML.
