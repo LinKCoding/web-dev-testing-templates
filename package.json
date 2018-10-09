@@ -37,7 +37,7 @@
     "karma-json-reporter": "1.2.0",
     "karma-ng-html2js-preprocessor": "0.2.1",
     "karma-phantomjs-launcher": "1.0.0",
-    "lodash": "4.13.1",
+    "lodash": "4.17.5",
     "mocha": "2.5.3",
     "mongoose": "^4.11.13",
     "morgan": "1.8.2",

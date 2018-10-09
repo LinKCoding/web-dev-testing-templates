@@ -31,6 +31,8 @@ var flatten = require('./services/common').flatten;
 var mpath = require('mpath');
 var idGetter = require('./plugins/idGetter');
 
+var specialProperties = ['__proto__', 'constructor', 'prototype'];
+
 /**
  * Document constructor.
  *
@@ -917,6 +919,9 @@ Document.prototype.$__set = function(pathToMark, path, constructing, parts, sche
     var next = i + 1;
     var last = next === l;
     cur += (cur ? '.' + parts[i] : parts[i]);
+    if (specialProperties.indexOf(parts[i]) !== -1) {
+      return;
+    }
 
     if (last) {
       obj[parts[i]] = val;
