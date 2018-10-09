@@ -2,7 +2,18 @@
 Use Case:
 + These tests are for when you want to test the JavaScript that a learner has written
 
+Benefits:
++ Selection of multiple tests to choose from that can be mixed and matched.
++ Code Evaluation
+  + Rewire allows functions and variables to be read
+  + Sinon allows tracking of methods
++ Structured parses code differently from writing raw regex
+
+Limitations:
++ Works for node (backend), if working with the browser, will not have access to other files like **index.html**
+
 ### Notes:
++ When running mocha tests in the LE, make sure you've included an empty `test` folder inside the workspace. Otherwise, you'll get an error and your mocha tests won't run.
 + In **mochaTemplates**, there are a few boilerplate templates you can use
 + REW refers to rewire tests
 + STR refers to structured tests
@@ -10,6 +21,7 @@ Use Case:
 + Copy and paste the template inside **main.js** and then edit as needed
 
 ### To run locally:
++ In mocha test templates, you'll notice that each file has a commented out `console.log()`, this is to prevent an error from showing up in the LE. While testing locally, leave it commented out.
 + Edit the code inside **test/testFile.js**
 + Add what code you want to test inside **main.js**
 + Every change should be saved to the file(s) before testing
