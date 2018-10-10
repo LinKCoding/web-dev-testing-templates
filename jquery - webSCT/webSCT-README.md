@@ -12,7 +12,7 @@ Limitations:
   + Only tests frontend.
 + Can't check that eventListener has been triggered, browser will refresh after the "Run" button is clicked
 + Can't combine tests (e.g. mocha or componentTest)
-
++ Must be in pre-ES6 code. 
 
 ### To run locally:
 + The sandbox folder will contain the code necessary to run your tests locally (if you need to restore to default, duplicate the **default** folder).
