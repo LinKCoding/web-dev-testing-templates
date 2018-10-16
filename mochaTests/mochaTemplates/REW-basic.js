@@ -19,6 +19,6 @@ describe('', function () {
     }
 
     expect(varLearnerDeclares, 'Did you ...?').to.be.a('<dataType>')
-    expect(varLearnerDeclares(), 'Did you ...?').to.deep.equal.('<Exact value here>')
+    expect(varLearnerDeclares(), 'Did you ...?').to.deep.equal('<Exact value here>')
   });
 });
